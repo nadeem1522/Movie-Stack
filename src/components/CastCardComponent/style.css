@@ -1,0 +1,63 @@
+.cast-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 350px;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.cast-card:hover {
+  transform: scale(1.05);
+}
+
+.cast-image {
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+  position: relative;
+}
+
+.cast-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1.5), transparent);
+  z-index: 2;
+}
+
+.cast-details {
+  padding: 10px;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    color: #fff;
+}
+
+.cast-name {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.cast-character {
+  margin: 5px 0;
+  font-size: 0.8rem;
+  color: #9d9d9d;
+}
+
+@media (max-width: 600px) {
+  .cast-card {
+    flex-direction: column;
+  }
+
+  .cast-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 100%;
+  }
+}

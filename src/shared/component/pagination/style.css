@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 5.5rem;
+  cursor: pointer;
+outline: none;
+text-decoration: none;
+border: 0;
+  border-radius: 4px;
+  background-color: #B0E0E6;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.page-info {
+  font-size: 14px;
+ color: rgb(192, 192, 192);
+}
